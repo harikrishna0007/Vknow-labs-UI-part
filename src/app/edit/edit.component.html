@@ -1,0 +1,78 @@
+<form action="/action_page.php" class="was-validated" [formGroup]='studentForm' (submit)='postForm()'>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="uname">name</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                        required formControlName="name">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="urolenumber">rolenumber</label>
+                    <input type="number" class="form-control" id="urolenumber" placeholder="Enter rolenumber"
+                        rolenumber="urolenumber" required formControlName="rolenumber">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+            </div>
+
+            <div class=" col-lg-5">
+                <div class="form-group">
+                    <label for="usubject1">subject1</label>
+                    <input type="text" class="form-control" id="usubject1" placeholder="Enter subject1"
+                        subject1="usubject1" required formControlName="subject1">
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class=" col-lg-5">
+            <div class="form-group">
+                <label for="usubject2">subject2</label>
+                <input type="text" class="form-control" id="usubject2" placeholder="Enter subject2" subject2="usubject2"
+                    required formControlName="subject2">
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class=" col-lg-5">
+        <div class="form-group">
+            <label for="umark1">mark1</label>
+            <input type="number" class="form-control" id="umark1" placeholder="Enter mark1" mark1="umark1" required
+                formControlName="mark1">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+    </div>
+
+    <div class=" col-lg-5">
+        <div class="form-group">
+            <label for="umark2">mark2</label>
+            <input type="number" class="form-control" id="umark2" placeholder="Enter mark2" mark1="umark2" required
+                formControlName="mark2">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+    </div>
+
+
+    <div class="class row">
+        <div class="class col-lg-12">
+            <div class="class form-group">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+    </div>
+</form>

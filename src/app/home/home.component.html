@@ -1,0 +1,36 @@
+<table class="table table-striped w-auto" style="height: 60%">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>rolenumber</th>
+        <th>subject1</th>
+        <th>Subject2</th>
+        <th>mark1</th>
+        <th>mark2</th>
+        <th><a routerLink="../../create" class="btn btn-primary btn-lg">Add +</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-info" *ngFor="let student of studentList; let i = index;">
+        
+          <th scope="row">{{i+1}}</th>
+          <td>{{student.name}}</td>
+          <td>{{student.rolenumber}}</td>
+          <td>{{student.subject1}}</td>
+          <td>{{student.subject2}}</td>
+          <td>{{student.mark1}}</td>
+          <td>{{student.mark2}}</td>
+          <td>
+            <a routerLink="../../edit/{{student._id}}" class="btn btn-light">edit</a>
+          </td>
+          <td><button class="btn btn-danger" (click)="deleteForm(student._id)">Delete</button></td>
+  
+          
+          
+  
+      </tr>
+  
+    </tbody>
+  
+  </table>
